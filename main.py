@@ -27,7 +27,7 @@ async def ask_openai(prompt):
         response = openai.Completion.create(
             model="gpt-4-1106-preview",
             prompt=prompt,
-            max_tokens=150  # Adjust max tokens as needed
+            max_tokens=150  # Adjust the number of tokens as needed
         )
         return response.choices[0].text
     except Exception as e:
